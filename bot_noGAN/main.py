@@ -57,13 +57,13 @@ def cancel(update, context):
 
 
 if __name__ == '__main__':
-    token = "1007080640:AAHzJpoIAsOOL5bKSjaWbz9FflKpaqD02Vo"
+    token = "___"
     # Включим самый базовый логгинг, чтобы видеть сообщения об ошибках
     logging.basicConfig(
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         level=logging.INFO)
 
-    updater = Updater('1007080640:AAHzJpoIAsOOL5bKSjaWbz9FflKpaqD02Vo', use_context=True,
+    updater = Updater(token, use_context=True,
                       request_kwargs={'proxy_url': 'socks5h://163.172.152.192:1080'})
     dp = updater.dispatcher
 
